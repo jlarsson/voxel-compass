@@ -10,6 +10,7 @@ Compass for voxeljs based games. See demo at http://jlarsson.github.io/voxel-com
 var createGame = require('voxel-engine')
 require('voxel-compass')
 var game = createGame({
+  require: require,
   pluginOpts: {
     'voxel-compass': <options>
   }
