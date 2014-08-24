@@ -1,0 +1,20 @@
+{
+    "name": "voxel-compass",
+    "version": "0.0.0",
+    "description": "gh-pages demo for voxel-compass",
+    "main": "index.js",
+    "scripts": {
+        "start": "beefy index.js:bundle.js 999",
+        "build": "browserify index.js -o bundle.js"
+    },
+    "author": "",
+    "dependencies": {
+        "voxel-engine": "~0.20.1",
+        "voxel-land": "~0.2.1",
+        "voxel-compass": "git://github.com/jlarsson/voxel-compass.git"
+    },
+    "devDependencies": {
+        "beefy": "~2.1.0",
+        "browserify": "~5.10.0"
+    }
+}
