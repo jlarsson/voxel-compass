@@ -38,10 +38,10 @@ Options defaults to
 ```
 
 ### threshold
-A value in degrees that represents the minimal change in viev direction that will trigger a ```compass-direction``` event.
+A value in degrees that represents the minimal change in view direction that will trigger a ```compass-direction``` event.
 
 ### north
-Vector that represents direction to the nortpole in game coordinates
+Vector that represents direction to the nortpole in game coordinates.
 
 ### element
 If set (as DOM element or id of DOM element), the element will be rotated using CSS transformations.
