@@ -45,11 +45,14 @@
 
 
             function getAutoElement(element) {
-                element = (typeof element) === 'string' ? document.getElementById(element) : element;
-                if (!element) {
-                    return;
+                if (!element){
+                    return
                 }
-                var transformCandidates = ['transformProperty', 'webkitTransform', 'oTransform', 'msTransform', 'mozTransform'];
+                element = (typeof element) === 'string' ? document.getElementById(element) : element
+                if (!element) {
+                    return
+                }
+                var transformCandidates = ['transformProperty', 'webkitTransform', 'oTransform', 'msTransform', 'mozTransform']
                 for (var i = 0; i < transformCandidates.length; ++i) {
                     if (element.style[transformCandidates[i]] !== undefined) {
                         return {
@@ -59,10 +62,10 @@
                     }
                 }
             }
-            var auto = getAutoElement(opts.element);
+            var auto = getAutoElement(options.element)
             if (auto) {
                 this.on('compass-direction', function (direction) {
-                    auto.element.style[auto.transform] = 'rotate(' + direction + 'deg)';
+                    auto.element.style[auto.transform] = 'rotate(' + direction + 'deg)'
                 });
             }
         }
